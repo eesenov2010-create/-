@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный выбор готовых салатов и овощных блюд QuickLunch.">
+  <title>Салаты и овощные блюда — QuickLunch</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p><nav aria-label="Основная навигация"><ul>
+    <li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li><li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li><li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+  </ul></nav><a href="order.html">Корзина и заявка</a></header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Каталог / Салаты и овощные блюда</p><h1>Салаты и овощные блюда</h1><p>Демонстрационные готовые блюда. Состав, наличие, цена и поставщик не подтверждены и будут согласовываться отдельно.</p><a class="back-link" href="catalog.html" data-back>← Назад</a></section>
+    <form class="product-selection" data-product-form data-category="Салаты и овощные блюда">
+      <article class="product-option"><label class="product-choice" for="meal-salad-fresh"><input type="checkbox" id="meal-salad-fresh" value="meal-salad-fresh" data-product-name="Салат из свежих овощей" data-unit="порц."><span><strong>Салат из свежих овощей</strong><small>Салат из свежих овощей, готовый к подаче.</small></span></label><label class="quantity-control" for="qty-meal-salad-fresh">Количество, порций<input type="number" id="qty-meal-salad-fresh" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-salad-vinaigrette"><input type="checkbox" id="meal-salad-vinaigrette" value="meal-salad-vinaigrette" data-product-name="Винегрет" data-unit="порц."><span><strong>Винегрет</strong><small>Готовый овощной салат.</small></span></label><label class="quantity-control" for="qty-meal-salad-vinaigrette">Количество, порций<input type="number" id="qty-meal-salad-vinaigrette" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-salad-carrot"><input type="checkbox" id="meal-salad-carrot" value="meal-salad-carrot" data-product-name="Морковный салат" data-unit="порц."><span><strong>Морковный салат</strong><small>Готовый салат из моркови.</small></span></label><label class="quantity-control" for="qty-meal-salad-carrot">Количество, порций<input type="number" id="qty-meal-salad-carrot" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-salad-vegetables"><input type="checkbox" id="meal-salad-vegetables" value="meal-salad-vegetables" data-product-name="Тушёные овощи" data-unit="порц."><span><strong>Тушёные овощи</strong><small>Приготовленные тушёные овощи на гарнир.</small></span></label><label class="quantity-control" for="qty-meal-salad-vegetables">Количество, порций<input type="number" id="qty-meal-salad-vegetables" min="1" step="1" data-quantity disabled></label></article>
+      <p class="form-notice" data-product-error role="status" aria-live="polite"></p><button type="submit">Добавить в корзину</button>
+    </form>
+    <aside class="cart-panel" data-cart-panel hidden aria-labelledby="cart-heading" aria-live="polite"><div class="cart-panel-heading"><h2 id="cart-heading">Корзина обновлена</h2><button type="button" data-close-cart aria-label="Закрыть корзину">Закрыть</button></div><ul data-cart-items></ul><p data-cart-status></p><a href="order.html">Перейти к заявке</a></aside>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

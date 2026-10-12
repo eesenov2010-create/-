@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Подготовьте заявку на поставку готовых блюд для столовой колледжа.">
+  <title>Заявка на поставку — QuickLunch</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p>
+    <nav aria-label="Основная навигация"><ul>
+      <li><a href="catalog.html">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li>
+      <li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html" aria-current="page">Оформление заявки</a></li>
+      <li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+    </ul></nav>
+    <a href="catalog.html">Вернуться в каталог</a>
+  </header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">QuickLunch / Заявка</p><h1>Заявка на поставку</h1><p>Заполните все поля и проверьте выбранные блюда. Сейчас заявка сохраняется только в этом браузере и не передаётся оператору.</p></section>
+    <section class="order-basket" aria-labelledby="basket-heading">
+      <h2 id="basket-heading">Список выбранных блюд</h2>
+      <p data-order-empty>Корзина пока пуста. Сначала выберите готовые блюда в каталоге.</p>
+      <ul data-order-items></ul>
+      <a href="catalog.html">Открыть каталог</a>
+    </section>
+    <form id="order-form" class="order-form">
+      <fieldset>
+        <legend>Информация о заказчике</legend>
+        <p><label for="college-name">Название колледжа</label><input type="text" id="college-name" name="college_name" autocomplete="organization" required></p>
+        <p><label for="contact-name">ФИО ответственного сотрудника</label><input type="text" id="contact-name" name="contact_name" autocomplete="name" required></p>
+        <p><label for="contact-phone">Контактный телефон</label><input type="tel" id="contact-phone" name="contact_phone" autocomplete="tel" required></p>
+        <p><label for="contact-email">Электронная почта</label><input type="email" id="contact-email" name="contact_email" autocomplete="email" required></p>
+      </fieldset>
+      <fieldset>
+        <legend>Информация о поставке</legend>
+        <p><label for="desired-delivery-date">Желаемая дата поставки</label><input type="date" id="desired-delivery-date" name="desired_delivery_date" required></p>
+        <p><label for="desired-delivery-time">Желаемое время поставки</label><input type="time" id="desired-delivery-time" name="desired_delivery_time" required></p>
+        <p><label for="delivery-location">Адрес или место приёмки</label><input type="text" id="delivery-location" name="delivery_location" autocomplete="street-address" required></p>
+        <p class="field-wide"><label for="additional-requirements">Дополнительные требования и комментарии</label><textarea id="additional-requirements" name="additional_requirements" rows="4" required></textarea></p>
+      </fieldset>
+      <p class="form-notice" data-order-error role="status" aria-live="polite"></p>
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

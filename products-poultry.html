@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный выбор готовых блюд из птицы QuickLunch.">
+  <title>Блюда из птицы — QuickLunch</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p><nav aria-label="Основная навигация"><ul>
+    <li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li><li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li><li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+  </ul></nav><a href="order.html">Корзина и заявка</a></header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Каталог / Блюда из птицы</p><h1>Блюда из птицы</h1><p>Демонстрационные готовые блюда. Состав порции, наличие, цена и поставщик не подтверждены и будут согласовываться отдельно.</p><a class="back-link" href="catalog.html" data-back>← Назад</a></section>
+    <form class="product-selection" data-product-form data-category="Блюда из птицы">
+      <article class="product-option"><label class="product-choice" for="meal-poultry-grill"><input type="checkbox" id="meal-poultry-grill" value="meal-poultry-grill" data-product-name="Куриное филе на гриле" data-unit="порц."><span><strong>Куриное филе на гриле</strong><small>Куриное филе, приготовленное на гриле.</small></span></label><label class="quantity-control" for="qty-meal-poultry-grill">Количество, порций<input type="number" id="qty-meal-poultry-grill" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-poultry-cutlets"><input type="checkbox" id="meal-poultry-cutlets" value="meal-poultry-cutlets" data-product-name="Куриные котлеты" data-unit="порц."><span><strong>Куриные котлеты</strong><small>Приготовленные котлеты из курицы.</small></span></label><label class="quantity-control" for="qty-meal-poultry-cutlets">Количество, порций<input type="number" id="qty-meal-poultry-cutlets" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-poultry-thigh"><input type="checkbox" id="meal-poultry-thigh" value="meal-poultry-thigh" data-product-name="Запечённое куриное бедро" data-unit="порц."><span><strong>Запечённое куриное бедро</strong><small>Куриное бедро, запечённое до готовности.</small></span></label><label class="quantity-control" for="qty-meal-poultry-thigh">Количество, порций<input type="number" id="qty-meal-poultry-thigh" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-poultry-vegetables"><input type="checkbox" id="meal-poultry-vegetables" value="meal-poultry-vegetables" data-product-name="Курица с овощами" data-unit="порц."><span><strong>Курица с овощами</strong><small>Готовое блюдо из курицы с приготовленными овощами.</small></span></label><label class="quantity-control" for="qty-meal-poultry-vegetables">Количество, порций<input type="number" id="qty-meal-poultry-vegetables" min="1" step="1" data-quantity disabled></label></article>
+      <p class="form-notice" data-product-error role="status" aria-live="polite"></p><button type="submit">Добавить в корзину</button>
+    </form>
+    <aside class="cart-panel" data-cart-panel hidden aria-labelledby="cart-heading" aria-live="polite"><div class="cart-panel-heading"><h2 id="cart-heading">Корзина обновлена</h2><button type="button" data-close-cart aria-label="Закрыть корзину">Закрыть</button></div><ul data-cart-items></ul><p data-cart-status></p><a href="order.html">Перейти к заявке</a></aside>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

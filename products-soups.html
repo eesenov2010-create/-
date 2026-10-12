@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный выбор готовых супов QuickLunch.">
+  <title>Супы — QuickLunch</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p><nav aria-label="Основная навигация"><ul>
+    <li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li><li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li><li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+  </ul></nav><a href="order.html">Корзина и заявка</a></header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Каталог / Супы</p><h1>Супы</h1><p>Демонстрационные готовые блюда. Состав порции, наличие, цена и поставщик не подтверждены и будут согласовываться отдельно.</p><a class="back-link" href="catalog.html" data-back>← Назад</a></section>
+    <form class="product-selection" data-product-form data-category="Супы">
+      <article class="product-option"><label class="product-choice" for="meal-soup-chicken"><input type="checkbox" id="meal-soup-chicken" value="meal-soup-chicken" data-product-name="Куриный суп" data-unit="порц."><span><strong>Куриный суп</strong><small>Готовый суп на куриной основе.</small></span></label><label class="quantity-control" for="qty-meal-soup-chicken">Количество, порций<input type="number" id="qty-meal-soup-chicken" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-soup-borscht"><input type="checkbox" id="meal-soup-borscht" value="meal-soup-borscht" data-product-name="Борщ" data-unit="порц."><span><strong>Борщ</strong><small>Готовый суп для обеденного меню.</small></span></label><label class="quantity-control" for="qty-meal-soup-borscht">Количество, порций<input type="number" id="qty-meal-soup-borscht" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-soup-meatballs"><input type="checkbox" id="meal-soup-meatballs" value="meal-soup-meatballs" data-product-name="Суп с фрикадельками" data-unit="порц."><span><strong>Суп с фрикадельками</strong><small>Суп с приготовленными мясными фрикадельками.</small></span></label><label class="quantity-control" for="qty-meal-soup-meatballs">Количество, порций<input type="number" id="qty-meal-soup-meatballs" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-soup-vegetable"><input type="checkbox" id="meal-soup-vegetable" value="meal-soup-vegetable" data-product-name="Овощной суп" data-unit="порц."><span><strong>Овощной суп</strong><small>Готовый суп с приготовленными овощами.</small></span></label><label class="quantity-control" for="qty-meal-soup-vegetable">Количество, порций<input type="number" id="qty-meal-soup-vegetable" min="1" step="1" data-quantity disabled></label></article>
+      <p class="form-notice" data-product-error role="status" aria-live="polite"></p><button type="submit">Добавить в корзину</button>
+    </form>
+    <aside class="cart-panel" data-cart-panel hidden aria-labelledby="cart-heading" aria-live="polite"><div class="cart-panel-heading"><h2 id="cart-heading">Корзина обновлена</h2><button type="button" data-close-cart aria-label="Закрыть корзину">Закрыть</button></div><ul data-cart-items></ul><p data-cart-status></p><a href="order.html">Перейти к заявке</a></aside>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

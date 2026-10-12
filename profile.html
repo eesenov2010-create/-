@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Локальный демонстрационный профиль QuickLunch.">
+  <title>Профиль — QuickLunch</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p>
+    <nav aria-label="Основная навигация"><ul>
+      <li><a href="catalog.html">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li>
+      <li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li>
+      <li><a href="profile.html" aria-current="page">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+    </ul></nav>
+    <a href="catalog.html">В каталог</a>
+  </header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">QuickLunch / Профиль</p><h1>Профиль пользователя</h1><p>Это демонстрационный профиль для текущей вкладки. Настоящая авторизация пока не подключена.</p></section>
+    <section class="profile-layout">
+      <article class="profile-panel">
+        <h2>Контактные данные</h2>
+        <form data-profile-form>
+          <p><label for="profile-name">Ваше имя</label><input type="text" id="profile-name" name="profile_name" autocomplete="name" required></p>
+          <p><label for="profile-email">Электронная почта</label><input type="email" id="profile-email" name="profile_email" autocomplete="email" required></p>
+          <button type="submit">Сохранить данные</button>
+          <p class="form-notice" data-profile-status role="status" aria-live="polite"></p>
+        </form>
+      </article>
+      <article class="profile-panel">
+        <h2>Письмо на электронную почту</h2>
+        <p>Текст, который вы попросили отправлять:</p>
+        <blockquote>
+          <p>«Вот те раз! — подумал Мюллер, когда на улице ему на голову упал кирпич.</p>
+          <p>— Вот те два! — подумал Штирлиц и бросил второй кирпич».</p>
+        </blockquote>
+        <p class="demo-notice">Отправка письма на адрес не настроена: для неё нужны сервер и почтовый сервис. Пока текст показан здесь, но письмо никому не отправляется.</p>
+      </article>
+    </section>
+    <section class="profile-panel chat-panel">
+      <h2>Чат с оператором</h2>
+      <p class="demo-notice">Демо-чат: сообщения сохраняются только в этой вкладке и не видны оператору. Для реального общения понадобится сервер.</p>
+      <ol data-chat-messages aria-live="polite"></ol>
+      <form data-chat-form>
+        <label for="chat-message">Сообщение</label>
+        <textarea id="chat-message" name="chat_message" rows="3" required></textarea>
+        <button type="submit">Добавить сообщение</button>
+      </form>
+    </section>
+    <p class="page-action"><a href="index.html">Перейти на главную</a></p>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

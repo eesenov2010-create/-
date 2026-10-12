@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный выбор готовых мясных блюд для заявки QuickLunch.">
+  <title>Мясные блюда — QuickLunch</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p><nav aria-label="Основная навигация"><ul>
+    <li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li><li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li><li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+  </ul></nav><a href="order.html">Корзина и заявка</a></header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Каталог / Мясные блюда</p><h1>Мясные блюда</h1><p>Демонстрационные блюда. Состав порции, наличие, цена и поставщик не подтверждены и будут согласовываться отдельно.</p><a class="back-link" href="catalog.html" data-back>← Назад</a></section>
+    <form class="product-selection" data-product-form data-category="Мясные блюда">
+      <article class="product-option"><label class="product-choice" for="meal-meat-cutlets"><input type="checkbox" id="meal-meat-cutlets" value="meal-meat-cutlets" data-product-name="Говяжьи котлеты" data-unit="порц."><span><strong>Говяжьи котлеты</strong><small>Приготовленные котлеты из говядины.</small></span></label><label class="quantity-control" for="qty-meal-meat-cutlets">Количество, порций<input type="number" id="qty-meal-meat-cutlets" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-meat-goulash"><input type="checkbox" id="meal-meat-goulash" value="meal-meat-goulash" data-product-name="Гуляш из говядины" data-unit="порц."><span><strong>Гуляш из говядины</strong><small>Тушёная говядина, приготовленная с подливой.</small></span></label><label class="quantity-control" for="qty-meal-meat-goulash">Количество, порций<input type="number" id="qty-meal-meat-goulash" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-meat-meatballs"><input type="checkbox" id="meal-meat-meatballs" value="meal-meat-meatballs" data-product-name="Мясные тефтели" data-unit="порц."><span><strong>Мясные тефтели</strong><small>Приготовленные мясные тефтели.</small></span></label><label class="quantity-control" for="qty-meal-meat-meatballs">Количество, порций<input type="number" id="qty-meal-meat-meatballs" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-meat-stew"><input type="checkbox" id="meal-meat-stew" value="meal-meat-stew" data-product-name="Тушёная говядина" data-unit="порц."><span><strong>Тушёная говядина</strong><small>Готовое тушёное мясное блюдо.</small></span></label><label class="quantity-control" for="qty-meal-meat-stew">Количество, порций<input type="number" id="qty-meal-meat-stew" min="1" step="1" data-quantity disabled></label></article>
+      <p class="form-notice" data-product-error role="status" aria-live="polite"></p><button type="submit">Добавить в корзину</button>
+    </form>
+    <aside class="cart-panel" data-cart-panel hidden aria-labelledby="cart-heading" aria-live="polite"><div class="cart-panel-heading"><h2 id="cart-heading">Корзина обновлена</h2><button type="button" data-close-cart aria-label="Закрыть корзину">Закрыть</button></div><ul data-cart-items></ul><p data-cart-status></p><a href="order.html">Перейти к заявке</a></aside>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

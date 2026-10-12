@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный выбор готовых гарниров QuickLunch.">
+  <title>Гарниры — QuickLunch</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p><nav aria-label="Основная навигация"><ul>
+    <li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li><li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li><li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+  </ul></nav><a href="order.html">Корзина и заявка</a></header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Каталог / Гарниры</p><h1>Гарниры</h1><p>Только приготовленные гарниры. Состав порции, наличие, цена и поставщик не подтверждены и будут согласовываться отдельно.</p><a class="back-link" href="catalog.html" data-back>← Назад</a></section>
+    <form class="product-selection" data-product-form data-category="Гарниры">
+      <article class="product-option"><label class="product-choice" for="meal-side-mash"><input type="checkbox" id="meal-side-mash" value="meal-side-mash" data-product-name="Картофельное пюре" data-unit="порц."><span><strong>Картофельное пюре</strong><small>Приготовленный картофельный гарнир.</small></span></label><label class="quantity-control" for="qty-meal-side-mash">Количество, порций<input type="number" id="qty-meal-side-mash" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-side-rice"><input type="checkbox" id="meal-side-rice" value="meal-side-rice" data-product-name="Отварной рис" data-unit="порц."><span><strong>Отварной рис</strong><small>Готовый рисовый гарнир.</small></span></label><label class="quantity-control" for="qty-meal-side-rice">Количество, порций<input type="number" id="qty-meal-side-rice" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-side-buckwheat"><input type="checkbox" id="meal-side-buckwheat" value="meal-side-buckwheat" data-product-name="Гречка" data-unit="порц."><span><strong>Гречка</strong><small>Приготовленная гречневая каша на гарнир.</small></span></label><label class="quantity-control" for="qty-meal-side-buckwheat">Количество, порций<input type="number" id="qty-meal-side-buckwheat" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-side-pasta"><input type="checkbox" id="meal-side-pasta" value="meal-side-pasta" data-product-name="Макароны с маслом" data-unit="порц."><span><strong>Макароны с маслом</strong><small>Готовый макаронный гарнир.</small></span></label><label class="quantity-control" for="qty-meal-side-pasta">Количество, порций<input type="number" id="qty-meal-side-pasta" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-side-ragout"><input type="checkbox" id="meal-side-ragout" value="meal-side-ragout" data-product-name="Овощное рагу" data-unit="порц."><span><strong>Овощное рагу</strong><small>Приготовленные тушёные овощи.</small></span></label><label class="quantity-control" for="qty-meal-side-ragout">Количество, порций<input type="number" id="qty-meal-side-ragout" min="1" step="1" data-quantity disabled></label></article>
+      <p class="form-notice" data-product-error role="status" aria-live="polite"></p><button type="submit">Добавить в корзину</button>
+    </form>
+    <aside class="cart-panel" data-cart-panel hidden aria-labelledby="cart-heading" aria-live="polite"><div class="cart-panel-heading"><h2 id="cart-heading">Корзина обновлена</h2><button type="button" data-close-cart aria-label="Закрыть корзину">Закрыть</button></div><ul data-cart-items></ul><p data-cart-status></p><a href="order.html">Перейти к заявке</a></aside>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

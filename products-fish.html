@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный выбор готовых рыбных блюд для заявки QuickLunch.">
+  <title>Рыбные блюда — QuickLunch</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p><nav aria-label="Основная навигация"><ul>
+    <li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li><li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li><li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+  </ul></nav><a href="order.html">Корзина и заявка</a></header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Каталог / Рыбные блюда</p><h1>Рыбные блюда</h1><p>Демонстрационные блюда. Состав порции, наличие, цена и поставщик не подтверждены и будут согласовываться отдельно.</p><a class="back-link" href="catalog.html" data-back>← Назад</a></section>
+    <form class="product-selection" data-product-form data-category="Рыбные блюда">
+      <article class="product-option"><label class="product-choice" for="meal-fish-salmon"><input type="checkbox" id="meal-fish-salmon" value="meal-fish-salmon" data-product-name="Жареное филе лосося без костей" data-unit="порц."><span><strong>Жареное филе лосося без костей</strong><small>Порционное филе, приготовленное на сковороде.</small></span></label><label class="quantity-control" for="qty-meal-fish-salmon">Количество, порций<input type="number" id="qty-meal-fish-salmon" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-fish-zander"><input type="checkbox" id="meal-fish-zander" value="meal-fish-zander" data-product-name="Филе судака без костей" data-unit="порц."><span><strong>Филе судака без костей</strong><small>Филе без костей для горячего блюда.</small></span></label><label class="quantity-control" for="qty-meal-fish-zander">Количество, порций<input type="number" id="qty-meal-fish-zander" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-fish-pollock"><input type="checkbox" id="meal-fish-pollock" value="meal-fish-pollock" data-product-name="Запечённое филе минтая" data-unit="порц."><span><strong>Запечённое филе минтая</strong><small>Филе, запечённое до готовности.</small></span></label><label class="quantity-control" for="qty-meal-fish-pollock">Количество, порций<input type="number" id="qty-meal-fish-pollock" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-fish-cakes"><input type="checkbox" id="meal-fish-cakes" value="meal-fish-cakes" data-product-name="Рыбные котлеты" data-unit="порц."><span><strong>Рыбные котлеты</strong><small>Приготовленные котлеты из рыбы.</small></span></label><label class="quantity-control" for="qty-meal-fish-cakes">Количество, порций<input type="number" id="qty-meal-fish-cakes" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-fish-cod"><input type="checkbox" id="meal-fish-cod" value="meal-fish-cod" data-product-name="Запечённое филе трески" data-unit="порц."><span><strong>Запечённое филе трески</strong><small>Филе трески, приготовленное в духовке.</small></span></label><label class="quantity-control" for="qty-meal-fish-cod">Количество, порций<input type="number" id="qty-meal-fish-cod" min="1" step="1" data-quantity disabled></label></article>
+      <p class="form-notice" data-product-error role="status" aria-live="polite"></p><button type="submit">Добавить в корзину</button>
+    </form>
+    <aside class="cart-panel" data-cart-panel hidden aria-labelledby="cart-heading" aria-live="polite"><div class="cart-panel-heading"><h2 id="cart-heading">Корзина обновлена</h2><button type="button" data-close-cart aria-label="Закрыть корзину">Закрыть</button></div><ul data-cart-items></ul><p data-cart-status></p><a href="order.html">Перейти к заявке</a></aside>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>

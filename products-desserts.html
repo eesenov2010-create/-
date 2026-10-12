@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Демонстрационный выбор готовой выпечки и десертов QuickLunch.">
+  <title>Выпечка и десерты — QuickLunch</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><p><a href="index.html#hero" aria-label="QuickLunch — на главную">QuickLunch</a></p><nav aria-label="Основная навигация"><ul>
+    <li><a href="catalog.html" aria-current="page">Каталог</a></li><li><a href="benefits.html">Преимущества</a></li><li><a href="how-it-works.html">Как это работает</a></li><li><a href="order.html">Оформление заявки</a></li><li><a href="profile.html">Профиль</a></li><li><a href="index.html#about-contacts">Контакты</a></li>
+  </ul></nav><a href="order.html">Корзина и заявка</a></header>
+  <main class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Каталог / Выпечка и десерты</p><h1>Выпечка и десерты</h1><p>Демонстрационные готовые блюда. Состав, наличие, цена и поставщик не подтверждены и будут согласовываться отдельно.</p><a class="back-link" href="catalog.html" data-back>← Назад</a></section>
+    <form class="product-selection" data-product-form data-category="Выпечка и десерты">
+      <article class="product-option"><label class="product-choice" for="meal-dessert-bun"><input type="checkbox" id="meal-dessert-bun" value="meal-dessert-bun" data-product-name="Булочка" data-unit="шт."><span><strong>Булочка</strong><small>Готовое хлебобулочное изделие.</small></span></label><label class="quantity-control" for="qty-meal-dessert-bun">Количество, штук<input type="number" id="qty-meal-dessert-bun" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-dessert-pirozhok"><input type="checkbox" id="meal-dessert-pirozhok" value="meal-dessert-pirozhok" data-product-name="Пирожок" data-unit="шт."><span><strong>Пирожок</strong><small>Начинку и состав следует уточнить у поставщика.</small></span></label><label class="quantity-control" for="qty-meal-dessert-pirozhok">Количество, штук<input type="number" id="qty-meal-dessert-pirozhok" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-dessert-syrniki"><input type="checkbox" id="meal-dessert-syrniki" value="meal-dessert-syrniki" data-product-name="Сырники" data-unit="порц."><span><strong>Сырники</strong><small>Приготовленные сырники для подачи.</small></span></label><label class="quantity-control" for="qty-meal-dessert-syrniki">Количество, порций<input type="number" id="qty-meal-dessert-syrniki" min="1" step="1" data-quantity disabled></label></article>
+      <article class="product-option"><label class="product-choice" for="meal-dessert-casserole"><input type="checkbox" id="meal-dessert-casserole" value="meal-dessert-casserole" data-product-name="Творожная запеканка" data-unit="порц."><span><strong>Творожная запеканка</strong><small>Запечённый десерт, готовый к порционной подаче.</small></span></label><label class="quantity-control" for="qty-meal-dessert-casserole">Количество, порций<input type="number" id="qty-meal-dessert-casserole" min="1" step="1" data-quantity disabled></label></article>
+      <p class="form-notice" data-product-error role="status" aria-live="polite"></p><button type="submit">Добавить в корзину</button>
+    </form>
+    <aside class="cart-panel" data-cart-panel hidden aria-labelledby="cart-heading" aria-live="polite"><div class="cart-panel-heading"><h2 id="cart-heading">Корзина обновлена</h2><button type="button" data-close-cart aria-label="Закрыть корзину">Закрыть</button></div><ul data-cart-items></ul><p data-cart-status></p><a href="order.html">Перейти к заявке</a></aside>
+  </main>
+  <footer><p>QuickLunch</p><p>[Год] — проект QuickLunch</p></footer>
+</body>
+</html>
